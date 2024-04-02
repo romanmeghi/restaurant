@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman's Restaurant - Contact/Reservation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS specific to this page */
+        #contact {
+            background-image: url('https://lh6.googleusercontent.com/proxy/WeTx_eKTgyp4ryZp8p5Rd4q7rG4cs4lyUWRZbQDIDwexRKWFFeEA5jN13LElqspDs0oPQENJHUdJ-LLltwFjUDpDENGqkqOJiI-eKiPmdSY0O4OMHDOY156Hi4sY4f3ec-MSpsQyGZCZ5Bmb2Ow2un9XErxv');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html" class="active">Contact/Reservation</a></li>
+    </ul>
+</nav>
+
+<!-- Contact/Reservation Form -->
+<section id="contact">
+    <h2>Contact/Reservation</h2>
+    <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <textarea name="message" placeholder="Your Message" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+</body>
+</html>

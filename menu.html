@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman's Restaurant - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS specific to this page */
+        #menu {
+            background-image: url('https://lh6.googleusercontent.com/proxy/WeTx_eKTgyp4ryZp8p5Rd4q7rG4cs4lyUWRZbQDIDwexRKWFFeEA5jN13LElqspDs0oPQENJHUdJ-LLltwFjUDpDENGqkqOJiI-eKiPmdSY0O4OMHDOY156Hi4sY4f3ec-MSpsQyGZCZ5Bmb2Ow2un9XErxv');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 30px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            border-radius: 10px;
+        }
+
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+        }
+
+        .menu-category {
+            padding: 20px 0;
+        }
+
+        .menu-category h3 {
+            margin-top: 0;
+        }
+
+        .menu-category ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu-category li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="contact.html">Contact/Reservation</a></li>
+    </ul>
+</nav>
+
+<!-- Menu Page -->
+<section id="menu">
+    <h2>Our Menu</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="menu-category">
+                <td colspan="3"><h3>Appetizers</h3></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Bruschetta</td>
+                <td>$<?php echo rand(8, 15); ?>.99</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Caprese Salad</td>
+                <td>$<?php echo rand(8, 15); ?>.99</td>
+            </tr>
+            <!-- Add more appetizers here if needed -->
+            
+            <tr class="menu-category">
+                <td colspan="3"><h3>Main Courses</h3></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Spaghetti Carbonara</td>
+                <td>$<?php echo rand(12, 25); ?>.99</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Chicken Parmesan</td>
+                <td>$<?php echo rand(15, 30); ?>.99</td>
+            </tr>
+            <!-- Add more main courses here if needed -->
+            
+            <tr class="menu-category">
+                <td colspan="3"><h3>Desserts</h3></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Tiramisu</td>
+                <td>$<?php echo rand(6, 12); ?>.99</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Cannoli</td>
+                <td>$<?php echo rand(6, 12); ?>.99</td>
+            </tr>
+            <!-- Add more desserts here if needed -->
+            
+            <tr class="menu-category">
+                <td colspan="3"><h3>Drinks</h3></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Wine Selection</td>
+                <td>$<?php echo rand(5, 20); ?>.99</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Cocktails</td>
+                <td>$<?php echo rand(8, 15); ?>.99</td>
+            </tr>
+            <!-- Add more drinks here if needed -->
+        </tbody>
+    </table>
+</section>
+
+</body>
+</html>
